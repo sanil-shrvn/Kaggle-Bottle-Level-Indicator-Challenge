@@ -407,7 +407,6 @@ print('Validation data shape: ', X_val.shape)
 print('Validation labels shape: ', y_val.shape)
 
 #Training 
-from utils.neuralnets.kaggle import kaggle_training
 tf.reset_default_graph()
 kaggle_training(X_train, y_train, X_val, y_val, 
          conv_featmap=[6, 16],
